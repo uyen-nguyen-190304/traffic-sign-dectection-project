@@ -14580,7 +14580,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Traffic-Sign-Detection---Project"><strong>Traffic Sign Detection - Project</strong><a class="anchor-link" href="#Traffic-Sign-Detection---Project">&#182;</a></h3><ul>
+<h1 id="Machine-Learning:-Traffic-Sign-Detection-Project"><strong>Machine Learning: Traffic Sign Detection Project</strong><a class="anchor-link" href="#Machine-Learning:-Traffic-Sign-Detection-Project">&#182;</a></h1><ul>
 <li><strong>Author</strong>: Uyen Nguyen</li>
 <li><strong>Date</strong>: 2023/09/29</li>
 <li><strong>Course</strong>: AI Vietnam - Course 2023</li>
@@ -14597,7 +14597,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="I.-Introduction"><strong>I. Introduction</strong><a class="anchor-link" href="#I.-Introduction">&#182;</a></h4>
+<h2 id="I.-Introduction"><strong>I. Introduction</strong><a class="anchor-link" href="#I.-Introduction">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -14608,22 +14608,11 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong><em>Traffic Sign Dectection</em></strong> is a problem applied algorithms related to the field of Object Detection to detect traffic signs on road. Normally, a Traffic Sgin Detection program includes two parts, which includes locating the signs and recognizing the traffic sign. So, a high-accuracy program needs to well-build the two parts mentioned above.</p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>In this porject, we will build a Traffic Sign Detection using Support Vector Machine (SVM). Defining the inpput and output of the program as follows:</p>
+<p><strong><em>Traffic Sign Dectection</em></strong> is a problem that applies algorithms related to the field of Object Detection to detect traffic signs on the road. Normally, a Traffic Sign Detection program includes two parts: locating the signs and recognizing the traffic signs. Therefore, a high-accuracy program needs to build these two parts well.</p>
+<p>In this project, we will build a Traffic Sign Detection using Support Vector Machine (SVM). Defining the inpput and output of the program as follows:</p>
 <ul>
-<li><strong>Input</strong>: A picture of a traffic sign</li>
-<li><strong>Output</strong>: The location (location) and class of the sign in the picture</li>
+<li><strong>Input</strong>: A picture of a traffic sign.</li>
+<li><strong>Output</strong>: The location and class of the sign in the picture.</li>
 </ul>
 
 </div>
@@ -14636,18 +14625,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="II.-Program-Installation"><strong>II. Program Installation</strong><a class="anchor-link" href="#II.-Program-Installation">&#182;</a></h4>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>In this part, we will start to build the program to detect different types of traffic signs. For the sake of the easeness of forming and logical thinking of building this program, this section will be split into two sections, corresponding to two main modules. These include "<em>Building a classification model using SVM</em>" and "<em>Building an Object Detect model using sliding window technique</em>".</p>
+<h2 id="II.-Program-Installation"><strong>II. Program Installation</strong><a class="anchor-link" href="#II.-Program-Installation">&#182;</a></h2><p>In this part, we will start to build the program to detect different types of traffic signs. For the sake of ease and logical thinking of building this program, this section will be split into two sections corresponding to two main modules. These include "<em>Building a classification model using SVM</em>" and "<em>Building an Object Detect model using sliding window technique</em>".</p>
 
 </div>
 </div>
@@ -14659,7 +14637,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h5 id="1.-Traffic-Sign-Classification-Model-Using-SVM"><strong>1. Traffic Sign Classification Model Using SVM</strong><a class="anchor-link" href="#1.-Traffic-Sign-Classification-Model-Using-SVM">&#182;</a></h5>
+<h3 id="1.-Traffic-Sign-Classification-Model-Using-SVM"><strong>1. Traffic Sign Classification Model Using SVM</strong><a class="anchor-link" href="#1.-Traffic-Sign-Classification-Model-Using-SVM">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -14670,7 +14648,8 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h5 id="a.-Import-necessary-libraries"><strong>a. Import necessary libraries</strong><a class="anchor-link" href="#a.-Import-necessary-libraries">&#182;</a></h5>
+<h4 id="a.-Import-necessary-libraries"><strong>a. Import necessary libraries</strong><a class="anchor-link" href="#a.-Import-necessary-libraries">&#182;</a></h4><p>We start off the project by importing all neccessary libraries that are necessary for this project, including <code>cv2</code>, <code>numpy</code>, <code>pandas</code>, <code>matplotlib</code>, <code>xml</code>, <code>skimage</code>, and <code>sklearn</code>.</p>
+
 </div>
 </div>
 </div>
@@ -14712,7 +14691,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h5 id="b.-Data-Loading"><strong>b. Data Loading</strong><a class="anchor-link" href="#b.-Data-Loading">&#182;</a></h5>
+<h4 id="b.-Data-Loading"><strong>b. Data Loading</strong><a class="anchor-link" href="#b.-Data-Loading">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -14723,22 +14702,11 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>We begin to read and store picture files and associated labels into 2 different lists, corresponding to X and y in our traffic signs classification problem. Inside the data folder, we have two other folders:</p>
+<p>We begin by reading and storing picture files and associated labels into two different lists, corresponding to X and y in our traffic signs classification problem. Inside the data folder, we have two other folders:</p>
 <ul>
-<li><strong>images</strong>: Folder with pictures</li>
-<li><strong>annotations</strong>: Folder with .xml file, which is the label file, contains the information about coordinate and class of objects in the coressponding pictures</li>
+<li><strong>images</strong>: Folder with pictures.</li>
+<li><strong>annotations</strong>: Folder with .xml files, which are the label files containing information about coordinates and classes of traffic signs.</li>
 </ul>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>First, we will declare the (relative) path to the two folders as well as two empty lists to store the pictures and labels as we're going through:</p>
 
 </div>
@@ -14786,20 +14754,8 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ol>
-<li>First, we will browse through each .xml file in <strong>annotations</strong> folder. To browser every file name in a folder, we will use <code>os.listdir()</code> function. To create a complete path to the .xml file, we use <code>os.path.join(path1, path2)</code> to connect folder annotations and file name together. </li>
-</ol>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<ol>
+<li><p>First, we will browse through each .xml file in <strong>annotations</strong> folder. To browser every file name in a folder, we will use <code>os.listdir()</code> function. To create a complete path to the .xml file, we use <code>os.path.join(path1, path2)</code> to connect folder annotations and file name together.</p>
+</li>
 <li><p>Examining a sample .xml file in the annotations folder, we can see the following information:</p>
 
 <pre><code> &lt;annotation&gt;
@@ -14825,50 +14781,14 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
          &lt;/bndbox&gt;
      &lt;/object&gt;
  &lt;/annotation&gt;</code></pre>
-<p>Inside a .xml file, we will get multiple information about the picture, and the most important information that we want to focus on this project is coordination information and class name of the object (in this case is the traffic sign). So that, we will care about &lt;<strong>name</strong>&gt; and &lt;<strong>bndbox</strong>&gt; entities. Inside a &lt;<em>object</em>&gt; entity, &lt;<em>name</em>&gt; corresponds to its class and &lt;<em>bnd</em>&gt; gives information about its location (coordinate) in the picture. To read the content of a .xml file in Python, we can use this xml module as demonstrated in the code</p>
+<p>Inside a .xml file, we will get multiple information about the picture, and the most important information that we want to focus on this project is coordination information and class name of the object (in this case is the traffic sign). So that, we will care about &lt;<strong>name</strong>&gt; and &lt;<strong>bndbox</strong>&gt; entities. Inside a &lt;<em>object</em>&gt; entity, &lt;<em>name</em>&gt; corresponds to its class and &lt;<em>bnd</em>&gt; gives information about its location (coordinate) in the picture. To read the content of a .xml file in Python, we can use this xml module as demonstrated in the code.</p>
 </li>
-</ol>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<ol>
-<li>The xml module also allow us to interact with different entities in a .xml file. After getting the root, we can search for/extract information of child entities of the root. For example, we can get the information of the &lt;<em>folder</em>&gt; entity to read the name of the image file.</li>
-</ol>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<ol>
-<li>Similarly, we can get information about &lt;<em>name</em>&gt; of &lt;<em>object</em>&gt;. Because a single picture can contain different objects, we will use a loop to browse each object if needed.</li>
-</ol>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<ol>
-<li>Finally, we will get information about the coordinates of the &lt;<em>bndbox</em>&gt; and extract the object picture to store in the <code>img_lst</code>. We also save the <code>classname</code> in the <code>label_lst</code></li>
+<li><p>The xml module also allow us to interact with different entities in a .xml file. After getting the root, we can search for/extract information of child entities of the root. For example, we can get the information of the &lt;<em>folder</em>&gt; entity to read the name of the image file.</p>
+</li>
+<li><p>Similarly, we can get information about &lt;<em>name</em>&gt; of &lt;<em>object</em>&gt;. Because a single picture can contain different objects, we will use a loop to browse each object if needed.</p>
+</li>
+<li><p>Finally, we will get information about the coordinates of the &lt;<em>bndbox</em>&gt; and extract the object picture to store in the <code>img_lst</code>. We also save the <code>classname</code> in the <code>label_lst</code>.</p>
+</li>
 </ol>
 
 </div>
@@ -14996,7 +14916,7 @@ Class names [&#39;speedlimit&#39;, &#39;crosswalk&#39;, &#39;stop&#39;]
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>It can be seen that out of all pictures in the given dataset, there are 1074 objects detected. The objects are of three different classes: <code>crosswalk</code>, <code>speedlimit</code>, and <code>stop</code>.</p>
+<p>It can be seen that out of all pictures in the given dataset, there are 1,074 objects detected. The objects are of three different classes: <code>crosswalk</code>, <code>speedlimit</code>, and <code>stop</code>.</p>
 
 </div>
 </div>
@@ -15008,7 +14928,7 @@ Class names [&#39;speedlimit&#39;, &#39;crosswalk&#39;, &#39;stop&#39;]
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h5 id="c.-Image-Preprocessing-Function"><strong>c. Image Preprocessing Function</strong><a class="anchor-link" href="#c.-Image-Preprocessing-Function">&#182;</a></h5>
+<h4 id="c.-Image-Preprocessing-Function"><strong>c. Image Preprocessing Function</strong><a class="anchor-link" href="#c.-Image-Preprocessing-Function">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -15095,7 +15015,7 @@ Class names [&#39;speedlimit&#39;, &#39;crosswalk&#39;, &#39;stop&#39;]
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h5 id="d.-Preprocessing-Inputs"><strong>d. Preprocessing Inputs</strong><a class="anchor-link" href="#d.-Preprocessing-Inputs">&#182;</a></h5>
+<h4 id="d.-Preprocessing-Inputs"><strong>d. Preprocessing Inputs</strong><a class="anchor-link" href="#d.-Preprocessing-Inputs">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -15205,7 +15125,7 @@ Shape of the first image after preprocessing: (324,)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h5 id="e.-Encode-Labels"><strong>e. Encode Labels</strong><a class="anchor-link" href="#e.-Encode-Labels">&#182;</a></h5>
+<h4 id="e.-Encode-Labels"><strong>e. Encode Labels</strong><a class="anchor-link" href="#e.-Encode-Labels">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -15245,7 +15165,7 @@ Shape of the first image after preprocessing: (324,)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h5 id="f.-Dataset-Spliting"><strong>f. Dataset Spliting</strong><a class="anchor-link" href="#f.-Dataset-Spliting">&#182;</a></h5>
+<h4 id="f.-Dataset-Spliting"><strong>f. Dataset Spliting</strong><a class="anchor-link" href="#f.-Dataset-Spliting">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -15293,7 +15213,7 @@ Shape of the first image after preprocessing: (324,)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h5 id="g.-Data-Normalization"><strong>g. Data Normalization</strong><a class="anchor-link" href="#g.-Data-Normalization">&#182;</a></h5>
+<h4 id="g.-Data-Normalization"><strong>g. Data Normalization</strong><a class="anchor-link" href="#g.-Data-Normalization">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -15334,7 +15254,7 @@ Shape of the first image after preprocessing: (324,)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h5 id="h.-Model-Training"><strong>h. Model Training</strong><a class="anchor-link" href="#h.-Model-Training">&#182;</a></h5>
+<h4 id="h.-Model-Training"><strong>h. Model Training</strong><a class="anchor-link" href="#h.-Model-Training">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -15406,7 +15326,7 @@ Shape of the first image after preprocessing: (324,)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h5 id="i.-Model-Evaluation"><strong>i. Model Evaluation</strong><a class="anchor-link" href="#i.-Model-Evaluation">&#182;</a></h5>
+<h4 id="i.-Model-Evaluation"><strong>i. Model Evaluation</strong><a class="anchor-link" href="#i.-Model-Evaluation">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -15508,7 +15428,7 @@ Accuracy: 0.978328173374613
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="2.-Object-Detection-Function"><strong>2. Object Detection Function</strong><a class="anchor-link" href="#2.-Object-Detection-Function">&#182;</a></h4>
+<h3 id="2.-Object-Detection-Function"><strong>2. Object Detection Function</strong><a class="anchor-link" href="#2.-Object-Detection-Function">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -15519,23 +15439,12 @@ Accuracy: 0.978328173374613
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>For the problem of Object Detection, the most difficult task is trying to identify the location (coordinate) of the object that we want accurately. In this project, we will use the most basic technique to find an object, which is <strong>Sliding Window</strong>. The main idea of this algorithm is as follows:</p>
+<h4 id="a.-Sliding-Window-Technique"><strong>a. Sliding Window Technique</strong><a class="anchor-link" href="#a.-Sliding-Window-Technique">&#182;</a></h4><p>For the problem of Object Detection, the most difficult task is trying to identify the location (coordinate) of the object that we want accurately. In this project, we will use the most basic technique to find an object, which is <strong>Sliding Window</strong>. The main idea of this algorithm is as follows:</p>
 <ol>
-<li>Define a window of size (w, h). The size of the window has to be chosen appropriately corresponding to the size of the object</li>
-<li>Let this window slides through each input pixel, sequentially from left to right, from top to bottom</li>
-<li>With each slide, we feed the recorded frame at the window into the sign classification model to determine whether this window contains a traffic sign or not</li>
+<li>Define a window of size (w, h). The size of the window has to be chosen appropriately corresponding to the size of the object.</li>
+<li>Let this window slides through each input pixel, sequentially from left to right, from top to bottom.</li>
+<li>With each slide, we feed the recorded frame at the window into the sign classification model to determine whether this window contains a traffic sign or not.</li>
 </ol>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>This can be implemented as follow:</p>
 
 </div>
@@ -15576,30 +15485,8 @@ Accuracy: 0.978328173374613
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>However, the sliding window technique has a lot of limitations. One of those is finding objects with small size.</p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h4 id="b.-Enhancing-using-Pyramid-Image"><strong>b. Enhancing using Pyramid Image</strong><a class="anchor-link" href="#b.-Enhancing-using-Pyramid-Image">&#182;</a></h4><p>However, the sliding window technique has a lot of limitations. One of those is finding objects with small size.</p>
 <p>In order to partly fix this problem, we can use the <strong>Pyramid Image</strong> technique. Basically, this technique will create a series of images with gradually smaller sizes. Then, the small objects in the original image will be larger than in the small image. From there, we apply a sliding window on the image sequence in the hope of finding small objects in the original image.</p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>However, we have to note that applying this techniques multiple times will slow down the the program as the sliding window function have to run multiple times. To implement the <strong>Pyramid Image</strong> technique, we do as follows:</p>
 
 </div>
@@ -15643,7 +15530,7 @@ Accuracy: 0.978328173374613
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>To draw the bounding box found in picture, we will now define the bounding box visualization function as follows:</p>
+<h4 id="c.-Bounding-Box-Visualization"><strong>c. Bounding Box Visualization</strong><a class="anchor-link" href="#c.-Bounding-Box-Visualization">&#182;</a></h4><p>To draw the bounding box found in picture, we will now define the bounding box visualization function as follows:</p>
 
 </div>
 </div>
@@ -15690,18 +15577,7 @@ Accuracy: 0.978328173374613
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>However, from here, another problem arises. While our program can detect traffic signs quite accurately, the results produces many bounding boxes lying on top of each other with not too big of a difference. To solve this problem, we will implement a post-processing step of the prediction results using the <strong>Non-Maximum Suppression (NMS)</strong> algorithm.</p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h4 id="d.-Non-Maximum-Suppression-Algorithm"><strong>d. Non-Maximum Suppression Algorithm</strong><a class="anchor-link" href="#d.-Non-Maximum-Suppression-Algorithm">&#182;</a></h4><p>However, from here, another problem arises. While our program can detect traffic signs quite accurately, the results produces many bounding boxes lying on top of each other with not too big of a difference. To solve this problem, we will implement a post-processing step of the prediction results using the <strong>Non-Maximum Suppression (NMS)</strong> algorithm.</p>
 <p>The <strong>Non-Maximum Suppression (NMS)</strong> technique will eliminate the overlapping bounding boxes and only keep the bounding box with the highest confidence score. In order to build the NMS function, we first implement the <strong>IoU (Intersection over Union)</strong> function as follows:</p>
 
 </div>
@@ -15806,7 +15682,7 @@ Accuracy: 0.978328173374613
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="Main-Function---Putting-Everything-Together"><strong>Main Function - Putting Everything Together</strong><a class="anchor-link" href="#Main-Function---Putting-Everything-Together">&#182;</a></h4>
+<h4 id="e.-Main-Function---Putting-Everything-Together"><strong>e. Main Function - Putting Everything Together</strong><a class="anchor-link" href="#e.-Main-Function---Putting-Everything-Together">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -15818,19 +15694,8 @@ Accuracy: 0.978328173374613
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>With all of the elements above, we can combine them to create a program to detect traffic signs. We can implement it as follows:</p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
-<li>Decalre the image path that we want to implement the detection and parameters used to modify the result of the function (including <code>conf_threshold</code>, <code>stride</code>, <code>window_size</code>)</li>
+<li>Declare the image path that we want to implement the detection and parameters used to modify the result of the function (including <code>conf_threshold</code>, <code>stride</code>, <code>window_size</code>)</li>
 </ul>
 
 </div>
@@ -16411,7 +16276,7 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="IV.-Conclusion"><strong>IV. Conclusion</strong><a class="anchor-link" href="#IV.-Conclusion">&#182;</a></h4>
+<h2 id="III.-Conclusion"><strong>III. Conclusion</strong><a class="anchor-link" href="#III.-Conclusion">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -16422,18 +16287,7 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>From the provided snippet, it's evident that the model successfully detected and categorized the traffic signs with significant accuracy. Nevertheless, there were instances where the traffic signs weren't detected, possibly due to their small size in the images. One potential reason for this oversight could be the high <code>stride</code> value assigned to the <code>sliding_window</code> function, causing the window to possibly skip over them. Another contributing factor could be the setting of a high <code>conf_threshold</code> (set at 0.90 in the given example). While there were a few misclassifications noted, they didn't occur at a high rate.</p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>From the provided snippet, it's evident that the model successfully detected and categorized the traffic signs with significant accuracy. Nevertheless, there were instances where the traffic signs weren't detected, possibly due to their small size in the images. One potential reason for this oversight could be the high stride value assigned to the sliding_window function, causing the window to possibly skip over them. Another contributing factor could be the setting of a high conf_threshold (set at 0.90 in the given example). While there were a few misclassifications noted, they didn't occur at a high rate. ​​</p>
 
 </div>
 </div>
